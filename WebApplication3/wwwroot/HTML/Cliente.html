@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="text" id="nombreApellidoCliente" placeholder="Nombre y Apellido" /> <br />
+    <input type="button" id="BotonCrear" value="Crear" onclick="crearUsuario()" />
+
+    <script type="text/javascript">
+
+
+
+        const crearUsuario = async () => {
+
+
+            let url = '/api/cliente/CreateCliente'
+
+            let cliente = {
+                nombreApellido: document.getElementById('nombreApellidoCliente').value
+            }
+
+            await fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(cliente),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(res => res.text())
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error! revisar log ');
+                })
+                .then(response => {
+
+                    alert('Respuesta del servidor: ' + response)
+                    console.log('Success:', response)
+
+                });
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

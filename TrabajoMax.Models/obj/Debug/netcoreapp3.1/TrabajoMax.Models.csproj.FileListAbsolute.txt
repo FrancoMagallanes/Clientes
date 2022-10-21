@@ -1,0 +1,10 @@
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\bin\Debug\netcoreapp3.1\TrabajoMax.Models.deps.json
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\bin\Debug\netcoreapp3.1\TrabajoMax.Models.dll
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\bin\Debug\netcoreapp3.1\TrabajoMax.Models.pdb
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.csproj.AssemblyReference.cache
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.AssemblyInfoInputs.cache
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.AssemblyInfo.cs
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.csproj.CoreCompileInputs.cache
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.dll
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Models\obj\Debug\netcoreapp3.1\TrabajoMax.Models.pdb

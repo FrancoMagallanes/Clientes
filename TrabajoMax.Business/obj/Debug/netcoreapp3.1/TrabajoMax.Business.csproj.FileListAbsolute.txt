@@ -1,0 +1,15 @@
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Business.deps.json
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Business.dll
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Business.pdb
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.csproj.AssemblyReference.cache
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.AssemblyInfoInputs.cache
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.AssemblyInfo.cs
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.csproj.CoreCompileInputs.cache
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.dll
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.pdb
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Models.dll
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Repository.dll
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Models.pdb
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\bin\Debug\netcoreapp3.1\TrabajoMax.Repository.pdb
+C:\Users\Franco\source\repos\WebApplication3\TrabajoMax.Business\obj\Debug\netcoreapp3.1\TrabajoMax.Business.csproj.CopyComplete
