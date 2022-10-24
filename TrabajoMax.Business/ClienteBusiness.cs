@@ -17,8 +17,7 @@ namespace TrabajoMax.Business
         }
         public int CreateCliente(Cliente cliente)
         {
-            //
-            //if (cliente.NombreApellido.IndexOf(@"0") >= 1)
+            
             string[] numeros = { "1", "2", "3", "4","5","6","7","8","9","0"};
             for (int i = 0; i < numeros.Length; i++)
             {
