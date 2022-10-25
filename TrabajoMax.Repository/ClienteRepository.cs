@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TrabajoMax.Models;
 using TrabajoMax.Repository.Interface;
@@ -22,6 +23,12 @@ namespace TrabajoMax.Repository
             _context.SaveChanges();
 
             return cliente.Id;
+        }
+
+        public List<Cliente> FindClientes()
+        {
+           return _context.Cliente.ToList();
+
         }
     }
 }

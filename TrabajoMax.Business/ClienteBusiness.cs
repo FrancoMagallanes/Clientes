@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Internal;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using TrabajoMax.Business.Interface;
 using TrabajoMax.Models;
@@ -17,7 +18,7 @@ namespace TrabajoMax.Business
         }
         public int CreateCliente(Cliente cliente)
         {
-            
+           
             string[] numeros = { "1", "2", "3", "4","5","6","7","8","9","0"};
             for (int i = 0; i < numeros.Length; i++)
             {
@@ -32,6 +33,11 @@ namespace TrabajoMax.Business
             int response = _clienteRepository.CreateCliente(cliente);
 
             return response;
+        }
+
+        public List<Cliente> FindClientes()
+        {
+           return _clienteRepository.FindClientes();  
         }
     }
 }

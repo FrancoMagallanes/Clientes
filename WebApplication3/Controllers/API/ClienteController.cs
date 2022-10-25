@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System;
 using TrabajoMax.Business.Interface;
 using TrabajoMax.Models;
+using System.Collections.Generic;
 
 namespace TrabajoMax.Controllers.API
 {
@@ -32,6 +33,25 @@ namespace TrabajoMax.Controllers.API
                 return BadRequest(e.Message);
             }
 
+        }
+
+        [HttpGet]
+
+        public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
+        {
+            try
+            {
+                var clientes = _clienteBusiness.FindClientes();
+
+                if (clientes == null)
+                    return NotFound();
+
+                return Ok(clientes);
+            }
+            catch (Exception exception)
+            {
+                return BadRequest(exception.Message);
+            }
         }
 
     }

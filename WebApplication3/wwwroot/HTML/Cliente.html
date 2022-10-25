@@ -2,11 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
-    <input type="text" id="nombreApellidoCliente" placeholder="Nombre y Apellido" /> <br />
-    <input type="button" id="BotonCrear" value="Crear" onclick="crearUsuario()" />
+
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered table-striped border border-dark" width="10px" align="left">
+
+                <thead>
+
+                    <tr align="left">
+                        <th width="10" height="12" align="left">  ID </th>
+
+                        <th width="15" height="12" align="left">  Nombre  </th>
+
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="data" align="left">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row justify-content-center align-content-around">
+            <div class="align-content-center">
+                <input type="text" id="nombreApellidoCliente" placeholder="Nombre y Apellido" />
+
+                <button type="button" class="btn btn-success w-50 ml-4 mt-1" id="BotonCrear" value="Crear" onclick="crearUsuario()">Crear</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript">
 
@@ -17,8 +50,15 @@
 
             let url = '/api/cliente/CreateCliente'
 
+
             let cliente = {
                 nombreApellido: document.getElementById('nombreApellidoCliente').value
+            }
+
+
+            if (document.getElementById('nombreApellidoCliente').value == "") {
+
+                return alert("Debes escribir algo")
             }
 
             await fetch(url, {
@@ -39,20 +79,46 @@
                     console.log('Success:', response)
 
                 });
+            getUsuarios();
+        }
 
 
 
+        const getUsuarios = async () => {
+
+            let url = '/api/cliente/getClientes'
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => mostrarData(data))
+                .catch(error => console.log(error))
+
+
+            const mostrarData = (data) => {
+
+
+                console.log(data)
+                let body = ""
+
+                for (let i = 0; i < data.length; i++) {
+
+
+
+                    body += `<tr> <td> ${data[i].id}</td> <td> ${data[i].nombreApellido}</td>  </tr>`
+
+
+                }
+
+
+                document.getElementById(`data`).innerHTML = body
+            }
 
 
 
 
         }
 
-
-
-
-
-
+        getUsuarios();
 
 
 

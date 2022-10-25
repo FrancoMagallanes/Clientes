@@ -8,5 +8,8 @@ namespace TrabajoMax.Business.Interface
     public interface IClienteBusiness
     {
         int CreateCliente(Cliente cliente);
+
+        List <Cliente> FindClientes();
+
     }
 }
