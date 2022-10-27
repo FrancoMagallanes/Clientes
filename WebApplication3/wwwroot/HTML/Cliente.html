@@ -4,26 +4,27 @@
     <meta charset="utf-8" />
     <title>Clientes</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+   
 </head>
 <body>
 
     <div class="container">
-        <div class="row">
-            <table class="table table-bordered table-striped border border-dark" width="10px" align="left">
+        <div class="row  " >
+            <table class="table table-bordered"  width="10px" align="left">
 
-                <thead>
+                <thead class="">
 
-                    <tr align="left">
-                        <th width="10" height="12" align="left">  ID </th>
+                    <tr align="left" class="border-dark ">
+                        <th class="text-center" width="10" height="12" align="left">  ID </th>
 
-                        <th width="15" height="12" align="left">  Nombre  </th>
+                        <th class="   text-center" width="15" height="12" align="left">  Nombre  </th>
 
 
                     </tr>
 
                 </thead>
 
-                <tbody id="data" align="left">
+                <tbody class="border-dark" id="data" align="left">
                 </tbody>
             </table>
         </div>
@@ -104,7 +105,7 @@
 
 
 
-                    body += `<tr> <td> ${data[i].id}</td> <td> ${data[i].nombreApellido}</td>  </tr>`
+                    body += `<tr> <td class="text-center"> ${data[i].id}</td> <td class="text-center"> ${data[i].nombreApellido}</td>  </tr>`
 
 
                 }
